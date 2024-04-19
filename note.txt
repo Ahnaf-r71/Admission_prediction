@@ -1,0 +1,24 @@
+Objective: The code aims to predict the likelihood of admission to a university based on various factors provided in a dataset.
+
+Dataset:
+
+    The dataset contains information on 400 applicants, including their GRE scores, TOEFL scores, university ratings, statement of purpose (SOP), letters of recommendation (LOR), undergraduate GPA (CGPA), and research experience.
+
+Prediction Target:
+
+    The target variable is the "Chance of Admit" column in the dataset, representing the probability of an applicant being admitted to the university. This variable is used for both linear regression and K-nearest neighbors classification tasks.
+
+Tasks:
+
+    Linear Regression:
+        Utilizes the GRE scores of applicants to predict their chances of admission using a simple linear regression model. The model assesses the relationship between GRE scores and admission probabilities, providing insights into how well GRE scores correlate with admission chances.
+    K-Nearest Neighbors (KNN):
+        Classifies applicants into "High" or "Low" chance of admission categories based on multiple features including GRE scores, TOEFL scores, university ratings, SOP, LOR, CGPA, and research experience.
+        Normalizes the feature values to prevent bias and uses KNN with k=3k=3 to classify applicants.
+        Evaluates the model's accuracy on a randomly selected test dataset of size 100.
+        Generates a graph depicting the accuracy of the KNN model for different values of kk (3, 5, 7, 9) to identify the optimal kk value for the model.
+
+Applications:
+
+    The code can be useful for university admissions offices to assess the likelihood of admitting prospective students based on their academic credentials.
+    It can also serve as a learning resource for understanding and implementing linear regression and K-nearest neighbors algorithms for predictive modeling tasks.
